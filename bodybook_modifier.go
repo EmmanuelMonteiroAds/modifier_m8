@@ -28,6 +28,7 @@ type Request struct {
     XMLName   xml.Name `xml:"Request" json:"-"`
     ApplicationId string   `xml:"applicationId" json:"applicationId"`
     SafrapayId  string   `xml:"safrapayId" json:"safrapayId"`
+    ContractId  string   `xml:"contractId" json:"contractId"`
 }
 
 func (m *XmlModifier) ModifyRequest(req *http.Request) error {
